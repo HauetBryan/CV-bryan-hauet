@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+
+
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #36393e;
+    border-bottom: 2px solid lightsteelblue;
+
+}
+
+
+
+
+.navbar button {
+    margin: 10px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    color: #000000;
+    border-radius: 30px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+}
+
+.navbar button::after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all 2s;
+
+}
+
+.navbar button:hover::after {
+    transform: rotate(360deg);
+}
+
+.navbar button:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+
+
+}
+
+nav ul li a button {
+    text-decoration: none;
+    margin: 30px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lora', serif;
+}
+
+/* HEADER */
+header {
+    background-color: #424549;
+    height: 715px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+header .entête {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.entête h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.entête h2 {
+    margin: 75px;
+    font-family: 'Pacifico', cursive;
+
+
+
+}
+
+/* A PROPOS */
+.mpropos {
+    background: url(assets/galaxie.png)center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    height: 1000px;
+    border: 1px skyblue solid;
+font-weight: 1000;
+
+
+}
+.propos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    background-color: rgba(219, 97, 97, 0.626);
+    border-radius: 20px;
+}
+
+.profil img {
+    width: 400px;
+    display: flex;
+    align-self: center;
+
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+}
+
+
+.propos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 24px;
+
+}
+
+.titrepropos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.titrepropos h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.titrepropos p {
+    font-family: 'Lora', serif;
+}
+
+.COORDONNÉES {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.COORDONNÉES h2 {
+    margin: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.COORDONNÉES span {
+    margin: 10px;
+    font-family: 'Lora', serif;
+}
+
+.COORDONNÉES span i {
+    margin: 15px;
+}
+
+.réseaux {
+    margin-bottom: 40px;
+}
+
+.cvt p {
+    margin-bottom: 20px;
+    font-family: 'smokun', cursive;
+}
+
+.cvt img {
+    margin-bottom: 30px;
+}
+
+
+/* CV */
+
+.CV {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    background-color: aquamarine;
+    background: url(assets/fond\ d\'image\ inverser.png) no-repeat top;
+    background-size: cover;
+    filter: contrast(2);
+
+
+}
+
+.CV p {
+    font-family: 'Lora', serif;
+}
+
+.EDUCATION {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.EDUCATION h2 {
+    margin-right: 3%;
+    margin-left: 20%;
+    font-family: 'Pacifico', cursive;
+}
+
+.EXPERIENCE {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+
+}
+
+.EXPERIENCE h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.EXPERIENCE .paragraphe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.EXPERIENCE #p1 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p2 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p3 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p4 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p5 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p6 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p7 {
+    margin-top: 20px;
+}
+
+.EXPERIENCE #p8 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.COMPETENCES {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.COMPETENCESTITRE {
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.PLACEMENTS {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.COMPETENCES1 {
+    margin-right: 30px;
+}
+
+.COMPETENCES2 {
+    margin-left: 30px;
+}
+
+.FORMATIONS {
+    margin-bottom: 30px;
+}
+
+.FORMATIONS h2 {
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.FORMATIONS #f1 {
+    margin-bottom: 20px;
+}
+
+.FORMATIONS #f2 {
+    margin-bottom: 20px;
+}
+
+.FORMATIONS #f3 {
+    margin-bottom: 20px;
+}
+
+.FORMATIONS #f4 {
+    margin-bottom: 20px;
+}
+
+.LOISIRS {
+    margin-bottom: 30px;
+}
+
+.LOISIRS h2 {
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.LOISIRS #l1 {
+    margin-bottom: 20px;
+}
+
+.LOISIRS #l2 {
+    margin-bottom: 20px;
+}
+
+.LOISIRS #l3 {
+    margin-bottom: 200px;
+}
+
+/* TRAVAUX */
+.travaux {
+    background-image: url('assets/code\ travaux.jpg');
+    height: 800px;
+}
+
+.travaux p{
+        visibility: hidden;
+}
+.travaux h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+}
+.travaux a {
+    font-size: 20px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    color: skyblue;
+    cursor: pointer;
+}
+.travaux img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.travaux #projetshifumi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bg {
+    background-color: whitesmoke;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+/* CONTACT */
+.contact {
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    background: url(assets/fond\ d\'image.png) no-repeat bottom;
+    background-size: cover;
+    border-bottom: 5px lightskyblue solid;
+
+}
+
+.contact .titrecontact h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.contact .tableau {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    border-radius: 20%;
+    font-family: 'Smokum', cursive;
+    background: url(assets/contact.png) no-repeat;
+
+
+}
+
+.tableau img {
+    margin-top: 50px;
+}
+
+#Nom {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    background-color: lightgreen;
+}
+
+#Email {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    background-color: lightgreen;
+}
+
+#Sujet {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    background-color: lightgreen;
+}
+
+textarea {
+    resize: vertical;
+    /* Permet de redimensionner la zone de texte verticalement */
+    white-space: pre-wrap;
+    /* Préserve les retours à la ligne et les espaces */
+    overflow-wrap: break-word;
+    /* Coupe les mots longs pour qu'ils tiennent dans la zone */
+    width: 400px;
+    height: 250px;
+    font-size: 20px;
+    background-color: lightgreen;
+    padding: 2%;
+}
+
+#bouton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: lightgreen;
+    font-family: 'Pacifico', cursive;
+}
+
+/* FOOTER */
+footer {
+    background: url("assets/Elden-Ring\ paysage.jpg") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+footer h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Smokun', cursive;
+}
+
+/* TEST */

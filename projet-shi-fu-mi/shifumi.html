@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHI FU MI</title>
+    <link rel="stylesheet" href="assets/css/shifumi.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="title">SHI FU MI</h1>
+
+    <!-- LE JEU -->
+    <div class="jeu">
+    <button class="userChoice" choice="0" onclick="play('rock')">Pierre</button>
+    <button class="userChoice" choice="1" onclick="play('paper')">Feuille</button>
+    <button class="userChoice" choice="2" onclick="play('scissors')">Ciseaux</button>
+    </div>
+
+      <!-- la grille pour les scores -->
+
+      <table id="scoreboard">
+        <tr>
+          <th id="test">Joueur</th>
+          <th>Ordinateur</th>
+          <th>Résultat</th>
+        </tr>
+      </table>
+    <script src="assets/js/shifumi.js"></script>
+</body>
+
+</html>
